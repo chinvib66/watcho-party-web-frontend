@@ -372,8 +372,10 @@ class App extends React.Component {
 							{this.state.sessionId && (
 								<div className="connected ">
 									<p>
-										Scan the QR code or Share the URL below so others can join the party.
-										The recipient(s) should navigate to this URL and{" "}
+										Scan the QR code or Share the Session ID below so others can join the
+										party.
+										<br />
+										The recipient(s) should navigate to this video and{" "}
 										<strong>then click on the Watcho Party icon</strong> to join.
 									</p>
 									<p>

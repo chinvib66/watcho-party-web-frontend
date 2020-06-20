@@ -23,6 +23,8 @@ Start the app
 > npm start
 ```
 
+App runs on http://localhost:3000
+
 ### Using Docker
 
 Build and tag the docker image
@@ -34,13 +36,15 @@ Build and tag the docker image
 Spin up the container once build is done
 
 ```
-docker run \
-    -it \
-    --rm \
-    -v ${PWD}:/app \
-    -v /app/node_modules \
-    -p 3001:3000 \
-    watcho-party-fr:dev
+docker run -it --rm -v ${PWD}:/app -v /app/node_modules -p 3001:3000  watcho-party-fr:dev
+```
+
+App runs on http://localhost:3000
+
+To stop the container, (container name can be found using `docker container ls`)
+
+```
+docker stop container_name
 ```
 
 > ### Note: For the sync to work, sync-backend server should be live.
