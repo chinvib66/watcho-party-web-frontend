@@ -4,7 +4,7 @@ import QRCode from "qrcode";
 import socketIOClient from "socket.io-client";
 import { Player } from "video-react";
 
-const ENDPOINT = process.env.SOCKET_ENDPOINT || "https://0m2q7.sse.codesandbox.io/";
+const ENDPOINT = process.env.SOCKET_ENDPOINT || "http://a8086de9040b.ngrok.io/"; //"https://0m2q7.sse.codesandbox.io/";
 const socket = socketIOClient(ENDPOINT);
 
 const CopyToClipboard = props => {
